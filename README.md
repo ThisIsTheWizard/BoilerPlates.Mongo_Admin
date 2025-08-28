@@ -1,5 +1,9 @@
 # BoilerPlates.Mongo_Admin
 
+![Docker](https://img.shields.io/badge/Docker-Ready-blue?logo=docker)
+![MongoDB](https://img.shields.io/badge/MongoDB-7.0-green?logo=mongodb)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
 A boilerplate setup for running **MongoDB** with **Mongo Express** using Docker Compose.
 This repository provides an easy way to spin up a MongoDB database along with a web-based admin interface for managing your collections and documents.
 
@@ -125,10 +129,6 @@ Data is persisted via Docker volumes:
 
 This boilerplate is provided under the MIT License.
 Feel free to use and modify it for your projects.
-
-![Docker](https://img.shields.io/badge/Docker-Ready-blue?logo=docker)
-![MongoDB](https://img.shields.io/badge/MongoDB-7.0-green?logo=mongodb)
-![License](https://img.shields.io/badge/License-MIT-yellow)
 
 ---
 
