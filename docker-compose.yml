@@ -1,0 +1,26 @@
+services:
+  mongo:
+    image: mongo:7
+    container_name: mongo_container
+    env_file:
+      - .env
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  mongo_express:
+    image: mongo-express
+    container_name: mongo_express_container
+    env_file:
+      - .env
+    ports:
+      - "8081:8081"
+    depends_on:
+      - mongo
+    volumes:
+      - mongo_express_data:/app/config
+
+volumes:
+  mongo_data:
+  mongo_express_data:
